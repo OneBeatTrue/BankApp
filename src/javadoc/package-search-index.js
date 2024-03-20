@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"entities.account"},{"l":"entities.bank"},{"l":"entities.centralBank"},{"l":"entities.customer"},{"l":"entities.customer.builder"},{"l":"entities.transaction"},{"l":"exceptions"},{"l":"models"},{"l":"org.example"}];updateSearchResults();
