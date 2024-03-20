@@ -2,7 +2,7 @@ package services.handlers.bank.update;
 
 import entities.bank.IBank;
 import exceptions.*;
-import services.applications.UpdateApplication;
+import services.windows.UpdateWindow;
 import services.handlers.BankHavingHandler;
 import services.exceptions.UnknownCommandException;
 import services.exceptions.WrongParametersAmountException;
@@ -29,7 +29,7 @@ public class UpdateHandler extends BankHavingHandler {
                 throw new NullPointerException(bank.toString());
             }
 
-            new UpdateApplication(input, output, bank).run();
+            new UpdateWindow(input, output, bank).run();
         }
         else {
             iterator.previous();

@@ -1,4 +1,4 @@
-package services.applications.exits;
+package services.windows.exits;
 
 public interface IExit {
     boolean isOn();

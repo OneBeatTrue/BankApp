@@ -2,7 +2,7 @@ package services.handlers.centralBank;
 
 import entities.centralBank.ICentralBank;
 import exceptions.*;
-import services.applications.CentralApplication;
+import services.windows.CentralWindow;
 import services.handlers.CentralBankHavingHandler;
 import services.exceptions.UnknownCommandException;
 import services.exceptions.WrongParametersAmountException;
@@ -25,7 +25,7 @@ public class CentralBankHandler extends CentralBankHavingHandler {
         }
 
         if (Objects.equals(iterator.next(), "central")) {
-            new CentralApplication(input, output, centralbank).run();
+            new CentralWindow(input, output, centralbank).run();
         }
         else {
             iterator.previous();

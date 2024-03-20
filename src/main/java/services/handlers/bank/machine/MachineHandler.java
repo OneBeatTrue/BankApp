@@ -2,7 +2,7 @@ package services.handlers.bank.machine;
 
 import entities.bank.IBank;
 import exceptions.*;
-import services.applications.MachineApplication;
+import services.windows.MachineWindow;
 import services.handlers.BankHavingHandler;
 import services.exceptions.UnknownCommandException;
 import services.exceptions.WrongParametersAmountException;
@@ -29,7 +29,7 @@ public class MachineHandler extends BankHavingHandler {
         }
 
         if (Objects.equals(iterator.next(), "machine")) {
-            new MachineApplication(input, output, bank).run();
+            new MachineWindow(input, output, bank).run();
         }
         else {
             iterator.previous();

@@ -3,7 +3,7 @@ package services.handlers.bank.application;
 import entities.bank.IApplication;
 import entities.bank.IBank;
 import exceptions.*;
-import services.applications.AppApplication;
+import services.windows.ApplicationWindow;
 import services.exceptions.UnknownCommandException;
 import services.exceptions.WrongParametersAmountException;
 import services.handlers.BankHavingHandler;
@@ -36,7 +36,7 @@ public class AppHandler extends BankHavingHandler {
             }
 
             app.logIn(Long.parseLong(iterator.next()));
-            new AppApplication(input, output, app).run();
+            new ApplicationWindow(input, output, app).run();
         }
         else {
             iterator.previous();

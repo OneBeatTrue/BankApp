@@ -1,4 +1,4 @@
-package services.applications;
+package services.windows;
 
 import entities.bank.IBank;
 import services.handlers.MainHandler;
@@ -10,8 +10,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class MachineApplication extends UserApplication {
-    public MachineApplication(Scanner input, PrintStream output, IBank bank) {
+public class MachineWindow extends Window {
+    public MachineWindow(Scanner input, PrintStream output, IBank bank) {
         super(input, output);
         if (bank == null) {
             throw new NullPointerException(bank.toString());

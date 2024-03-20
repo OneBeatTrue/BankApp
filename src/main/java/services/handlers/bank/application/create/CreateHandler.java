@@ -2,7 +2,7 @@ package services.handlers.bank.application.create;
 
 import entities.bank.IApplication;
 import exceptions.*;
-import services.applications.CreateApplication;
+import services.windows.CreateWindow;
 import services.exceptions.UnknownCommandException;
 import services.exceptions.WrongParametersAmountException;
 import services.handlers.ApplicationHavingHandler;
@@ -29,7 +29,7 @@ public class CreateHandler extends ApplicationHavingHandler {
         }
 
         if (Objects.equals(iterator.next(), "create")) {
-            new CreateApplication(input, output, app).run();
+            new CreateWindow(input, output, app).run();
         }
         else {
             iterator.previous();

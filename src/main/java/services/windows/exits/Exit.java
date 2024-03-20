@@ -1,4 +1,4 @@
-package services.applications.exits;
+package services.windows.exits;
 
 public class Exit implements IExit {
     public Exit() {

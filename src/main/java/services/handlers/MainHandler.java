@@ -1,7 +1,7 @@
 package services.handlers;
 
 import exceptions.*;
-import services.applications.exits.IExit;
+import services.windows.exits.IExit;
 import services.exceptions.UnknownCommandException;
 import services.exceptions.WrongParametersAmountException;
 

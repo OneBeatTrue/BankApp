@@ -1,8 +1,8 @@
-package services.applications;
+package services.windows;
 
 import exceptions.*;
-import services.applications.exits.Exit;
-import services.applications.exits.IExit;
+import services.windows.exits.Exit;
+import services.windows.exits.IExit;
 import services.exceptions.UnknownCommandException;
 import services.exceptions.WrongParametersAmountException;
 import services.handlers.IHandler;
@@ -10,8 +10,8 @@ import services.handlers.IHandler;
 import java.io.PrintStream;
 import java.util.*;
 
-public abstract class UserApplication implements IUserApplication {
-    public UserApplication(Scanner input, PrintStream output) {
+public abstract class Window implements IWindow {
+    public Window(Scanner input, PrintStream output) {
         this.input = new Scanner(System.in);
         this.output = System.out;
         exit = new Exit();

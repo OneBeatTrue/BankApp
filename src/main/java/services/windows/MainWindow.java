@@ -1,4 +1,4 @@
-package services.applications;
+package services.windows;
 
 import entities.centralBank.CentralBank;
 import entities.centralBank.ICentralBank;
@@ -11,8 +11,8 @@ import services.handlers.centralBank.CentralBankHandler;
 import java.io.PrintStream;
 import java.util.*;
 
-public class MainApplication extends UserApplication {
-    public MainApplication(Scanner input, PrintStream output) {
+public class MainWindow extends Window {
+    public MainWindow(Scanner input, PrintStream output) {
         super(input, output);
 
         centralBank = new CentralBank();

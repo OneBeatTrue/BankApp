@@ -1,4 +1,4 @@
-package services.applications;
+package services.windows;
 
 import entities.centralBank.ICentralBank;
 import services.handlers.MainHandler;
@@ -9,8 +9,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class CentralApplication extends UserApplication {
-    public CentralApplication(Scanner input, PrintStream output, ICentralBank centralBank) {
+public class CentralWindow extends Window {
+    public CentralWindow(Scanner input, PrintStream output, ICentralBank centralBank) {
         super(input, output);
         if (centralBank == null) {
             throw new NullPointerException(centralBank.toString());
